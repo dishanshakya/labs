@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\begin{document}
+\section*{Objective}
+{\bfseries To draw a triangle and apply rotation and reflection transformations using C/C++}
+
+\section*{Theory}
+Transformation refers to changing the shape, size and orientation of an object. These are accomplished with \emph {geometric transformations} that alter the coordinate descriptions of objects. The basic geometric transformations are translation, rotation, reflection and scaling.
+\subsection*{Reflection}
+Reflection is a transformation that produces a mirror image of an object. The mirror image for a two-dimensional reflection is generated relative to an axis of reflection by rotating the object $180^{\circ}$ about the reflection axis.
+\par Reflection on the line $y=0$, the x axis, is accomplished as
+\begin{displaymath}
+	(x',y') = (x, -y)
+\end{displaymath}
+\par Reflection on the line $x=0$, the y axis, is accomplished as
+\begin{displaymath}
+	(x',y') = (-x, y)
+\end{displaymath}
+\par Reflection on the line $y=x$ is accomplished as
+\begin{displaymath}
+	(x',y') = (y,x)
+\end{displaymath}
+\subsection*{Rotation}
+A two-dimensional rotation is applied to an object by repositioning it along a circular path in the xy plane. To generate a rotation, we specify a rotation angle $\theta$ and the position $(x_r, y_r)$ of the rotation point about which the object is to rotated.
+\par Rotation by an angle $\theta$ about the origin is accomplished as
+\begin{eqnarray*}
+	x' = x \cos \theta - y \sin \theta \\
+	y' = x \sin \theta + y \cos \theta \\
+\end{eqnarray*}
+\par Rotation by angle $\theta$ about an arbitary point $(x_r, y_r)$ is accomplished as
+\begin{eqnarray*}
+	x' = x_r + (x - x_r)\cos \theta - (y-y_r) \sin \theta \\
+	y' = y_r + (x - x_r)\sin \theta + (y - y_r) \cos \theta \\
+\end{eqnarray*}
+\end{document}
