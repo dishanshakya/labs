@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define f(x) (x*x-2)
+#define f(x) (4*sin(x)-exp(x))
 
 int main()
 {
